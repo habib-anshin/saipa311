@@ -7,7 +7,9 @@
     "require": {
         "php": ">=7.0.0",
         "fideloper/proxy": "~3.3",
+        "guzzlehttp/guzzle": "~6.0",
         "laravel/framework": "5.5.*",
+        "laravel/passport": "^4.0",
         "laravel/tinker": "~1.0"
     },
     "require-dev": {
@@ -20,6 +22,7 @@
         "classmap": [
             "database/seeds",
             "database/factories"
+
         ],
         "psr-4": {
             "App\\": "app/"
@@ -53,4 +56,5 @@
         "sort-packages": true,
         "optimize-autoloader": true
     }
+
 }
