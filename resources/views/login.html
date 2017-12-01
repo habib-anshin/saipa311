@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ورود به مدیریت نمایندگی</title>
+        <link rel="icon" type="image/png" href="'pic\logom.jpg">
+        <link rel="stylesheet" href="../../public/css/foundation.css">
+        <link rel="stylesheet" href="../../public/css/app.css">
+        <link rel="stylesheet" href="../../public/font-awesome-4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="../../public/css/font.css">
+        <link rel="stylesheet" href="../../public/css/key.css">
+    </head>
+    <body class="BYekan">
+    <div class="grid-x">
+        <div style="margin-top: 40px;margin-bottom: 20px;" class="medium-12">
+            <img class="float-center" src="../../public/pic/Saipa_Logo.svg.png" width="74px" height="74px">
+        </div>
+    </div>
+    <div class="grid-x">
+        <div class="medium-12">
+            <h5 class="BYekan text-center  login-txt">سامانه یکپارچه مدیریت نمایندگی</h5>
+        </div>
+    </div>
+    <div style="margin-top:20px;" class="grid-x">
+        <div style="margin:0 auto;" class="large-3 cell callout ">
+            <form>
+                <div class="columns padding-lr">
+                    <label>نام کاربری
+                        <input style="font-family: FontAwesome;" class="form-element-margin-btm" type="text" placeholder="&#xf2c0;" autofocus name="user" v-model="authInfo.email" v-validate="'required'" :class="{'input': true, 'error-border': errors.has('user')}">
+                    </label>
+
+                </div>
+                <div style="margin-top: 20px;" class="medium-12 columns padding-lr">
+                    <label>رمز عبور
+                        <input style="font-family: FontAwesome;" class="form-element-margin-btm" type="password" placeholder="&#xf09c;" name="pass" v-model="authInfo.password"  v-validate="'required'" :class="{'input': true, 'error-border': errors.has('pass')}">
+                    </label>
+                </div>
+                <div class="medium-12 padding-lr top-margin-element">
+                    <a href="dashboard.html" style="margin-top: 20px;"  name="submit" class="my-button my-saipa expanded">ورود</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="grid-x">
+        <div class="large-12">
+            <ul class="menu small-font align-center ul-margin">
+                <li><a class="footer-menu" href="#">دانلود اپلیکیشن</a></li>
+                <li><a class="footer-menu" href="#">درباره ما</a></li>
+                <li><a class="footer-menu" href="#">ارتباط با ما</a></li>
+            </ul>
+        </div>
+        <div class="large-12">
+            <p class="small-font footer-txt-size">تمامی حقوق این وب سایت متعلق به نمایندگی سایپا کد ۳۱۱ همدان می باشد.
+        <div style="margin-top: 20px;" class="large-12">
+            <img class="float-center" src="../../public/pic/keylogo.png" width="130px" height="20px">
+        </div>
+    </div>
+    </body>
+    <script src="../../public/js/vendor/jquery.js"></script>
+    <script src="../../public/js/vendor/foundation.js"></script>
+    <script src="../../public/js/app.js"></script>
+</html>

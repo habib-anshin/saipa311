@@ -1,0 +1,339 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ورود به مدیریت نمایندگی</title>
+        <link rel="icon" type="image/png" href="'pic\logom.jpg">
+        <link rel="stylesheet" href="../../public/css/foundation.css">
+        <link rel="stylesheet" href="../../public/css/app.css">
+        <link rel="stylesheet" href="../../public/font-awesome-4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="../../public/css/font.css">
+        <link rel="stylesheet" href="../../public/css/key.css">
+        <script src="../../public/js/Chart.js"></script>
+    </head>
+    <body class="BYekan">
+        <div class="grid-x">
+            <div id="leftmenuinner" style="background-color: #2C2E3E;z-index: 995;" class="medium-2 cell small-font">
+                <div  id="leftmenuinnerinner ">
+                    <div class="large-12">
+                        <img style="margin-top: 10px;" class="float-center" src="../../public/pic/Saipa_Logo.svg.png" width="50px" height="15px">
+                    </div>
+                    <nav class="accordion"  data-margin-top="4.2">
+                        <ul style="background-color: #2C2E3E;" class="vertical menu sub-menu accordion-menu" data-accordion-menu data-multi-open="false" >
+
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="grid-x">
+                    <div class="medium-12">
+                        <p style="margin-bottom: 5px;"  class="version-software text-center small-font">V:2576.1</p>
+                    </div>
+                </div>
+            </div>
+            <div style="padding:0px 30px;margin-right: 230px;" class="medium-10 border-right-line">
+                <!--Top Menu Start-->
+                <div style="z-index: 999;" data-sticky-container>
+                    <div style="background-color: #FFFFFF;" class="top-bar top-menu-color" data-sticky data-margin-top="0">
+                        <div class="top-bar-left">
+                            <ul style="background-color: #FFFFFF;" data-dropdown-menu class="dropdown  menu user-menu" >
+                                <li>
+                                    <a style="margin-top: -1px;"><i class="fa fa-bell-o size-21 icon-gradient" aria-hidden="true"></i></a>
+                                    <ul style="background-color:#FFFFFF;" class="top-menu-style menu vertical">
+                                        <li>
+                                            <div class="top-menu-bg">
+                                                <div class="grid-x cover-color">
+                                                    <div class="medium-12">
+                                                        <h5 class="text-center BYekan">9 پیام جدید</h5>
+                                                    </div>
+                                                    <div class="medium-12">
+                                                        <p class="text-center">پیام های کاربر</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="border-btm-line-dash">
+                                            <a style="padding-bottom: -5px;" href="#">
+                                                <div>
+                                                    <strong style="color: #000000;">مرتضی امزاجردی</strong>
+                                                    <span style="color: #777;" class="message-time large-offset-7">41 دقیقه قبل</span>
+                                                </div>
+                                                <div>
+                                                    <p style="color:  #333;margin-top: 12px;">درخواست خودرو تیبا....</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="border-btm-line">
+                                            <a style="padding-bottom: -5px;" href="#">
+                                                <div>
+                                                    <strong style="color: #000000;">مرتضی امزاجردی</strong>
+                                                    <span style="color: #777;" class="message-time large-offset-7">دو روز پیش</span>
+                                                </div>
+                                                <div>
+                                                    <p style="color:  #333;margin-top: 12px;">درخواست خودرو تیبا....</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a><span style="font-size: 14px;color: #666;">حبیب آنشین</span></a>
+                                    <ul style="background-color: #ffffff;" class="top-menu-style menu menu vertical small-font white-color">
+                                        <li>
+                                            <div class="top-menu-bg">
+                                                <div class="grid-x cover-color">
+                                                    <div class="medium-12">
+                                                        <h5 class="text-center BYekan">حبیب آنشین</h5>
+                                                    </div>
+                                                    <div class="medium-12">
+                                                        <p class="text-center">اپراتور نمایندگی ۳۱۱</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-top"><a href="#"><i class="tbl-menu fa fa-user-circle"></i> <span>پروفایل</span></a></li>
+                                        <li class="menu-top"><a href="#"><i class="tbl-menu fa fa-sliders"></i> <span>تنظیمات</span></a></li>
+                                        <li class="menu-top"><a v-on:click="logout"><i class="tbl-menu fa fa-sign-out"></i> <span>خروج</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Top Menu End-->
+                <div style="padding-right: 15px;padding-left: 15px;" class="grid-x">
+                    <div class="medium-12 border-btm-line">
+                        <h5 class="BYekan black-color">داشبورد مدیریت نمایندگی</h5>
+                    </div>
+                </div>
+
+                <div class="grid-x my-grid-margin">
+                    <div class="medium-3">
+                        <div class="notification-panel panel-red">
+                            <div class="panel-heading">
+                                <div class="grid-x">
+                                    <div class="medium-8">
+                                        <h4>13</h4>
+                                        <p>نمایندگی ها</p>
+                                    </div>
+                                    <div class="medium-4">
+                                        <i class="fa fa-car size-48" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-red">
+                                <a href="#">
+                                    <div class="panel-footer panel-footer-red small-font">
+                                        <i class="fi-arrow-left size-18 float-left"></i>مشاهده جزئیات
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="medium-3">
+                        <div class="notification-panel panel-yellow">
+                            <div class="panel-heading">
+                                <div class="grid-x">
+                                    <div class="medium-8">
+                                        <h4>82</h4>
+                                        <p>کاربران</p>
+                                    </div>
+                                    <div class="medium-4">
+                                        <i class="fa fa-users size-48" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-yellow">
+                                <a href="#">
+                                    <div class="panel-footer panel-footer-yellow small-font">
+                                        <i class="fi-arrow-left size-18 float-left"></i>مشاهده جزئیات
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="medium-3">
+                        <div class="notification-panel panel-green">
+                            <div class="panel-heading">
+                                <div class="grid-x">
+                                    <div class="medium-8">
+                                        <h4>34</h4>
+                                        <p>نظرسنجی ها</p>
+                                    </div>
+                                    <div class="medium-4">
+                                        <i class="fa fa-pie-chart size-48" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-green">
+                                <a href="#">
+                                    <div class="panel-footer panel-footer-green small-font">
+                                        <i class="fi-arrow-left size-18 float-left"></i>مشاهده جزئیات
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="medium-3">
+                        <div class="notification-panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="grid-x">
+                                    <div class="medium-8">
+                                        <h4>13</h4>
+                                        <p>تعداد پیام ها</p>
+                                    </div>
+                                    <div class="medium-4">
+                                        <i class="fa fa-envelope-o size-48" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-primary">
+                                <a href="#">
+                                    <div class="panel-footer panel-footer-primary small-font">
+                                        <i class="fi-arrow-left size-18 float-left"></i>مشاهده جزئیات
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid-x my-grid-margin">
+                    <div class="medium-6 dashboard-padding">
+                        <div class="medium-12 panel-heading"><i class="fa fa-bar-chart"></i> <span class="small-font">میزان فروش</span>
+                            <button type="button" class="my-secondary button tiny float-left" data-open="exampleModal1" onclick="myChartF1('myChartM')">اطلاعات بیشتر</button>
+                        </div>
+                        <div class="medium-12 my-callout">
+                            <canvas id="myChart3"></canvas>
+                        </div>
+                    </div>
+                    <div class="medium-6 dashboard-padding">
+                        <div class="medium-12 panel-heading"><i class="fa fa-area-chart"></i> <span class="small-font">رضایت مندی مشتریان</span>
+                            <button type="button" class="my-secondary button tiny float-left">اطلاعات بیشتر</button>
+                        </div>
+                        <div class="medium-12 my-callout">
+                            <canvas id="myChart1"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <script>
+
+
+                    var ctx = document.getElementById('myChart3').getContext('2d');
+                    var myChart3 = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['سه ماهه اول ۹۶', 'سه ماه دوم ۹۶', 'سه ماهه سوم 96'],
+                        datasets: [{
+                            label: 'امور مشتریان',
+                            data: [18, 24, 31],
+                            borderWidth: 1,
+                            borderColor:"rgba(227,138,26,0.4)",
+                            backgroundColor: "rgba(240,173,78,0.4)",
+                            options:{
+                                fill:false,
+
+                            },
+                        }, {
+                            label: 'امور فروش',
+                            data: [9, 12, 17],
+                            borderWidth: 1,
+                            borderColor:"rgba(181,55,116,0.4)",
+                            backgroundColor: "rgba(255,157,178,0.4)"
+
+                        }]
+                    }
+                });
+
+
+
+
+
+            var ctx = document.getElementById('myChart1').getContext('2d');
+            var myChart1 = new Chart(ctx, {
+                type: 'bar',
+                title: {
+                    display: true,
+                    text: 'چارت توزیع اعتبار بر اساس منابع'
+                },
+                data: {
+                    labels: ['فروردین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد', 'شهریور','مهر','آبان','آذر'],
+                    datasets: [{
+                        label: 'فروش خودرو',
+                        data: [23, 19, 12, 17, 18, 16, 10,13,14],
+                        borderWidth: 1,
+                        borderColor:"rgba(74,87,142,0.4)",
+                        backgroundColor: "rgba(51,122,183,0.4)"
+                    }, {
+                        label: 'پذیرش خودرو',
+                        data: [16, 14, 9, 13, 11, 12, 7,8,11],
+                        borderWidth: 1,
+                        borderColor:"rgba(66,139,61,0.4)",
+                        backgroundColor: "rgba(92,184,92,0.4)"
+
+                    }]
+                }
+            });
+            var ctx = document.getElementById('myChart2').getContext('2d');
+            var myChart2 = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['بودجه عمرانی مصوب','بودجه جاری مصوب'],
+                    datasets: [{
+                        label: 'توزیع اعتبار',
+                        data: [23, 14,],
+                        borderWidth: 1,
+                        borderColor:"rgba(227,138,26,0.4)",
+                        backgroundColor: [
+                            "rgba(240,173,78,0.4)",
+                            "rgba(255,157,178,0.4)"
+                        ]
+                    }]
+                }
+            });
+            var ctx = document.getElementById('myChart3').getContext('2d');
+            var myChart3 = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['سال مالی 1394', 'سال مالی 1395', 'سال مالی 1396'],
+                    datasets: [{
+                        label: 'تخصیص اعتبار عمرانی',
+                        data: [18, 24, 31],
+                        borderWidth: 1,
+                        borderColor:"rgba(227,138,26,0.4)",
+                        backgroundColor: "rgba(240,173,78,0.4)",
+                        options:{
+                            fill:false,
+
+                        },
+                    }, {
+                        label: 'تخصیص اعتبار جاری',
+                        data: [9, 12, 17],
+                        borderWidth: 1,
+                        borderColor:"rgba(181,55,116,0.4)",
+                        backgroundColor: "rgba(255,157,178,0.4)"
+
+                    }]
+                }
+            });
+
+        </script>
+
+
+        </div>
+    </body>
+    <script src="../../public/js/vendor/jquery.js"></script>
+    <script src="../../public/js/vendor/foundation.js"></script>
+    <script src="../../public/js/app.js"></script>
+</html>

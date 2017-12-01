@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'BYekan';
+    src: url('../fonts/BYekan.eot?#') format('eot'), /* IE6–8 */ url('../fonts/BYekan.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+    font-family: 'BZar';
+    src: url('../fonts/BZar.eot?#') format('eot'), /* IE6–8 */
+    url('../fonts/BZar.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/BZar.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+    font-family: 'BTitrBold';
+    src: url('../fonts/BTitrBold.eot?#') format('eot'),  /* IE6–8 */
+    url('../fonts/BTitrBold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/BTitrBold.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+    font-family: 'BNazanin';
+    src: url('../fonts/BNazanin.eot?#') format('eot'),  /* IE6–8 */
+    url('../fonts/BNazanin.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/BNazanin.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+.BYekan {
+    font-family: BYekan, Arial, Helvetica, sans-serif;
+}
+.BNazanin {
+    font-family: BNazanin, Arial, Helvetica, sans-serif;
+}
+.BZar {
+    font-family: BZar, Arial, Helvetica, sans-serif;
+}
+.BTitrBold {
+    font-family: BTitrBold, Arial, Helvetica, sans-serif;
+}
+.BNazanin {
+    font-family: BNazanin, Arial, Helvetica, sans-serif;
+}
