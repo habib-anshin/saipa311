@@ -31,8 +31,8 @@ class UserController extends Controller
          $response = $http->post(url('/oauth/token'), [
                'form_params' => [
                     'grant_type' => 'password',
-                    'client_id' => 2,
-                    'client_secret' => '3VGZDVGq9ByF8BjPdmrM6QTOpRTuCv2CU194MP3E',
+                    'client_id' => env('PASSWORD_CLIENT_ID'),
+                    'client_secret' => env('PASSWORD_CLIENT_SECRET'),
                     'username' => $request->email,
                     'password' => $request->password,
                     'scope' => '',

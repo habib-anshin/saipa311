@@ -16,6 +16,7 @@ class CreateTableRepresentation extends Migration
         if (!Schema::hastable('tbl_representations')) {
             Schema::create('tbl_representations', function (Blueprint $table) {
                 $table->increments('id');
+                $table->integer('user_id' )->length(10)->unsigned();
                 $table->string('rName');
                 $table->string('rCode');
                 $table->string('rProvince');
@@ -23,6 +24,11 @@ class CreateTableRepresentation extends Migration
                 $table->string('rCity');
                 $table->string('rAddress');
                 $table->timestamps();
+
+                $table->foreign('user_id')
+                    ->references('id')->on('users')
+                    ->onDelete('restrict')
+                    ->onUpdate('cascade');
             });
         }
     }

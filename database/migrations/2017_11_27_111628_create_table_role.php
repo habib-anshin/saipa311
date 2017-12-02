@@ -20,9 +20,6 @@ class CreateTableRole extends Migration
                 $table->text('roDescription');
                 $table->timestamps();
 
-                $table->integer('permission_id_role')->length(10)->nullable();;
-                $table->foreign('permission_id_role')->references('id')->on('tbl_permissions')
-                    ->onDelete('restrict')->onUpdate('cascade');
             });
         }
     }

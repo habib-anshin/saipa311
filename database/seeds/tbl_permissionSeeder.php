@@ -21,7 +21,7 @@ class tbl_permissionSeeder extends Seeder
         $user->pDescription='دسترسی و مدیریت بعضی از بخشی ها';
         $user->save();
 */
-         $user= new \App\Permission();
+        $user= new \App\Permission();
         $user->pLabel='limit';
         $user->pDescription='دستری به بخش هایی تعیین شده';
         $user->save();

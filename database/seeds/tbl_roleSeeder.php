@@ -21,7 +21,7 @@ class tbl_roleSeeder extends Seeder
         $user2->roDescription='اپراتور';
         $user2->save();
 */
-       $user = new \App\Role();
+        $user = new \App\Role();
         $user->roSubject='admin';
         $user->roDescription='مدیریت';
         $user->save();

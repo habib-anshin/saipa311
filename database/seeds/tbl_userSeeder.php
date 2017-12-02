@@ -15,6 +15,7 @@ class tbl_userSeeder extends Seeder
         $user->name='حبیب آنشین';
         $user->email='habibanshin';
         $user->password=Hash::make('123456');
+        $user->role_id_user=1;
         $user->state='1';
         $user->save();
     }

@@ -16,8 +16,10 @@ class CreateTableUser extends Migration
         if (!Schema::hastable('users')) {
             Schema::create('users', function (Blueprint $table) {
                 $table->increments('id');
+                $table->integer('role_id_user' )->length(10)->unsigned();
+
                 $table->string('name');
-                $table->string('email')->length(10)->unique()->nullable();
+                $table->string('email')->unique();
                 $table->string('mobile')->unique()->nullable();
                 $table->string('password');
                 $table->string('api_token', 60)->unique()->nullable();
@@ -26,16 +28,10 @@ class CreateTableUser extends Migration
                 $table->rememberToken();
                 $table->timestamps();
 
-               $table->integer('role_id_user' )->length(10)->unsigned()->nullable();
                 $table->foreign('role_id_user')
-                        ->references('id')->on('tbl_roles')
-                        ->onDelete('restrict')->onUpdate('cascade');
-
-                $table->integer('representations_id_user' )->length(10)->unsigned()->nullable();
-                $table->foreign('representations_id_user')
-                    ->references('id')->on('tbl_representations')
-                    ->onDelete('restrict')->onUpdate('cascade');
-
+                    ->references('id')->on('tbl_roles')
+                    ->onDelete('restrict')
+                    ->onUpdate('cascade');
 
             });
         }
